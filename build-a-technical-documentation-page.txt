@@ -1,0 +1,253 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML/CSS tips and tricks</title>
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header id="shortcut" class="subjects">Shortcuts</header>
+        <ul>
+          <li><a class="nav-link" href="#introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#comments">Comments</a></li>
+          <li><a class="nav-link" href="#first_and_last">First and Last</a></li>
+          <li><a class="nav-link" href="#!important">!important</a></li>
+          <li><a class="nav-link" href="#dark_mode">Dark Mode</a></li>
+        </ul>
+      </nav>
+      <header id="header">HTML/CSS tips and tricks</header>
+      <!-- section id match header text -->
+      <section id="introduction" class="main-section">
+        <header class="subjects">Introduction</header>
+        <article>
+            <p>HTML (Hypertext Markup Language) is the main markup language used for the development of web pages. The language is an asortment of many elements to construct every aspect of a website. It determines how content is presented on a website and how users can interact with it.</p>
+            <p>CSS (Cascading Style Sheets) is used to style the content provided by the HTML. It determines the position, size, color, and all other visual aspects of a webpage.</p>
+          <ul>
+            <header id="html-list-title">Benefits of HTML/CSS</header>
+            <li>HTML is the most used and universal markup language</li>
+            <li>HTML is light weighted and quick to load</li>
+            <li>CSS is friendly with the majority of devices</li>
+          </ul>
+        </article>
+      </section>
+      <section id="comments" class="main-section">
+        <header class="subjects">Comments</header>
+        <article>
+            <p>When faced with a wall of code, what has already been done and what needs to be done can become overwhelming. Inserting comments into the code helps focus the task and provide order. Comments can be written directly into the code without impacting the codes functions or displaying on the browser.</p>
+            <p>The purpose of a comment is up to the creator. It can indicate where something is missing, what needs to be added, how a section is meant to function, or any other note that needs to be made. </p>
+            <p>Comments are inserted on HTML and CSS in two different ways. For HTML, the user must surround their desired comment with <code>!--(desired comment)--</code> and bookend each side with < and > respectfully. In CSS, a comment is made by surrounding the comment with <code>/*(desired comment*/</code>In CSS, < and > are unnecessary</p>
+          <ul >
+            <header id="html-list-title">Uses for comments</header>
+            <li>explain the codes function</li>
+            <li>signify where code needs to be added</li>
+            <li>show where code isn't working</li>
+          </ul>
+        </article>
+      </section>
+      <section id="first_and_last" class="main-section">
+        <header class="subjects">First and Last</header>
+        <article>
+            <p>One of the most beneficial aspects of using CSS is the ability to impact many different elements in one line of code. </p>
+            <code>p { font-family: Helvetica;}</code>
+            <p>This code targets every p element in the code and changes its font to helvetica. However, what if you wanted the first or last instance of p in a group to be a different font. This can be done using the <code>:first-off-type</code> and <code>:last-off-type</code> pseudo-classes.</p>
+            <code>p:first-off-type {font-family: impact;}</code>
+            <p class="tri">Now in every group of p elements, the first instance will be in the impact font instead of helvetica.</p>
+        </article>
+      </section>
+      <section id="!important" class="main-section">
+        <header class="subjects">!important</header>
+        <article>
+            <p>When writting CSS code, at times, a new addition will override an already determined style. Whether that is done accidentally or not, there is a way to make sure the prior arrangement stays true.</p>
+            <code>p {font-family: Helvetica !important;}</code>
+            <p>In this example, the rule <code>!important</code> is added to determine that no matter what else is stated about the content in the p element, it will always be in the helvetica font. This can be useful to guarantee that specific elements become untouchable and are locked for the web page.</p>
+          <ul>
+          </ul>
+        </article>
+      </section>
+      <section id="dark_mode" class="main-section">
+        <header class="subjects">Dark Mode</header>
+        <article>
+            <p>In recent years, the majority of websites and apps have utilized a dark mode feature. Dark mode lessens the strain on the users eyes and cell phone batteries. There are many ways to set up a dark mode effect with CSS, but there is one way that is simple and quick.</p>
+            <code>html {color-scheme: light dark !important;}</code>
+          <ul>
+            <header>Benefits of dark mode</header>
+            <li>Improved phone battery life</li>
+            <li>Reduced screen glare</li>
+            <li>Reduced blue light exposure</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  scroll-behavior: smooth;
+}
+
+html,body {
+  min-width: 290px;
+  color: black;
+  background-color: #ffffff;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+#header {
+  font-weight: bold;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  min-width: 401px
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#shortcut {
+  padding: 20px 0 0 20px;
+}
+#navbar ul {
+  height: 100%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 1.2em;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar li:last-of-type {
+  border-bottom: 1px solid;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar a:hover {
+  background-color: #4d4e53;
+  color: white;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 400px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+    margin-top: 0;
+  }
+    #navbar {
+    padding-top: -50px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
+
+#introduction {
+  padding-top: 10px;
+}
+
+** end of undefined **
+

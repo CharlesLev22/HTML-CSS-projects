@@ -1,0 +1,257 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1"> 
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Johnny Unitas Tribute</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1 id="logo" class="top">NFL Tributes</h1>
+      <nav>
+        <ul>
+          <li><a href="#pre-nfl" class="top">Before Career</a></li>
+          <li><a href="#nfl-career" class="top">NFL</a></li>
+          <li><a href="#post-nfl" class="top">After Career</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <h1 id="title" class="top">Johnny Unitas</h1>
+      <p id="quick-bio">A leader of the NFL's passing revolution</p>
+      <div id="img-div">
+        <img id="image" class="si-cover" src="https://i.imgur.com/J6bHxZd.jpg" alt="Johnny Unitis presented on the Sports Illustrated cover for the second time during his career (1972)." />
+        <div id="img-caption"><p id="img-caption">Johnny Unitis presented on the cover of Sports Illustrated for the second time during his career (1972).</p></div>
+      </div>
+      <div id="tribute-info">
+        <div id="pre-nfl">
+          <div class="divider" id="pre-nfl" ></div>
+          <h2 class="info-titles">Before Career</h2>
+          <ul id="pre-nfl-list">
+            <li><bold>May 7, 1933</bold> - Johnny Unitas was born in Pittsburgh, Pennsylvania</li>
+            <li><bold>1938</bold> - Due to a combination off cardiovascular renal disease and pneumonia, Unitas's father passed away, leaving Unitas to be raised by his mother from the age of 5.</li>
+            <li><bold>1951-1954</bold> - Unitas dreamed of playing college football at Notre Dame, but because of him only being 6 foot 145 pound at the time, they went a different direction. Unitas spent his college career at the University of Louisville. </li>
+            <li><bold>1955</bold> - Unitas was drafted by his hometown Pittsburgh Steelers in the 9th round of the NFL draft. However, before the season started, Unitas was released from the team.</li>
+            <li><bold>1956</bold> - In this time out of the NFL, Unitas worked a construction job, while also playing on a local semiprofessional football team for $6 per game. This lasted until he was signed by the Baltimore Colts, resuming his NFL career.</li>
+          </ul>
+        </div>
+        <div class="divider" id="nfl-career"></div>
+        <div id="nfl-career">
+          <h2  class="info-titles">NFL</h2>
+          <ul id="nfllist">
+            <li><bold>1956</bold> - Unitas's first season began in a backup role until the current starting quarterback, George Shaw, broke his leg. Unitas assumed the starting role, and never gave it back.</li>
+            <li><bold>1957</bold> - In his first full NFL season, Unitas lead the league in passing yards and passing touchdowns, leading the Baltimore Colts to their first winning record in franchise history.</li>
+            <li><bold>1958</bold> - Unitas continued his winning ways in 1958, leading the Colts to the NFL Championship, where the Baltimore Colts topped the New York Giants 23-17. This was the first overtime game in NFL history, and was referred to at the time as the "greatest game ever played".</li>
+            <li><bold>1959</bold> - Johnny Unitas earned his first NFL MVP award and once again beat the Giants in the championship, becoming back-to-back champions.</li>
+            <li><bold>1960</bold> - Unitas's streak of 47-straight games with a touchdown pass ends. A streak that lasted until 2012, when Drew Brees surpassed him.</li>
+            <li><bold>1964</bold> - After several mediocre seasons from the team, they returned in 1964 as Unitas brought home his second MVP award. However, it came to a crashing end as they were upset and shut out by the Browns in the championship game.</li>
+            <li><bold>1967</bold> - He won his third and last MVP</li>
+            <li><bold>1968</bold> - In the preseason, Unitas suffered an injury to his elbow that kept him out of most of the season. Despite his absence, the Colts still managed to win the NFL championship. However in Super Bowl III, the Colts became the first team to win the NFL championship and not the Super Bowl. Despite having an injured elbow, Unitas came off the bench in the second half and led the Colts to their only points of the game in a 16-7 loss to the New York Jets.</li>
+            <li><bold>1970</bold> - Unitas and the Colts made it to Super Bowl V, where they beat the Dallas Cowboys 16-13 despite Unitas being knocked out of the game in the second quarter. </li>
+            <li><bold>1973</bold> - After years of regression and injuries with the Colts, Unitas was traded to the San Diego Chargers. He started his final four games here until he was benched.</li>
+          </ul>
+        </div>
+        <div class="divider" id="post-nfl"></div>
+        <div id="post-nfl">
+          <h2  class="info-titles">After Career</h2>
+          <ul id="post-nfl-list">
+            <li><bold>1974</bold> - At the end of his career, Unitas was the only quarterback to ever surpass 40,000 passing yards.</li>
+            <li><bold>1974-1979</bold> - Unitas spent the remaining years of the 70s doing color commentary for CBS.</li>
+            <li><bold>1979</bold> - Unitas was officially elected into the Pro Football Hall of Fame.</li>
+            <li><bold>1984</bold> - After the Colts move to Indianapolis, Unitas cut ties with the team, declaring he was and will only ever be a Baltimore Colt.</li>
+            <li><bold>September 11, 2002</bold> - Johnny Unitas passed away in Timonium, Maryland at the age of 69.</li>
+          </ul>
+        </div>
+        <div id="wiki">
+          <div class="divider"></div>
+          <h2 class="info-titles">Want to keep learning...</h2>
+          <p id="wiki">Visit his <a id="tribute-link" href="https://en.wikipedia.org/wiki/Johnny_Unitas" target="_blank">Wikipedia</a> to learn more about his illustrious career and life.</p>
+      </div>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  font-family: Helvetica;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(54, 85, 178, 95%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.top {
+  font-family: bookman;
+}
+
+#logo {
+  padding: 0.5rem;
+  font-size: 3rem;
+  letter-spacing: 0.25px;
+  border: 1px solid #f3f1e5;
+  background-color: #f3f1e5;
+  color: #3655b2;
+  border-radius: 10px;
+  text-shadow: 0 0 1px black;
+  margin-left: 15px;
+}
+
+
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+  border: 1px solid #f3f1e5;
+  border-radius: 10px;
+  text-shadow: 0 0 2px black;
+  background-color: #f3f1e5;
+}
+
+nav > ul > li {
+  
+  margin: 0;
+  display: block;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 3px;
+  background-color: #3655b2;
+  text-shadow: 0 0 8px black;
+}
+
+nav > ul > li:hover {
+  color: #f3f1e5;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 7px;
+  text-shadow: 0 0 8px black;
+}
+
+li > a {
+  text-decoration: none;
+  color: #f3f1e5;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+main {
+  padding-top: 10rem;
+  background-color: rgba(243, 241, 229, 100%);
+  min-height: 100%;
+  min-width: 100%;
+}
+
+#title {
+  margin: auto;
+  text-align: center;
+  font-size: 8rem;
+  padding-bottom: 2rem;
+  font-weight: 800;
+  font-variant: small-caps;
+}
+
+#quick-bio {
+  font-family: Courier;
+  font-weight: 700;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  padding-top: 2.35rem;
+  color: #f3f1e5;
+  text-shadow: 0 0 15px black;
+}
+
+#img-div {
+  background: rgba(54, 85, 178, 85%); 
+  padding: 10px;
+  margin-top: -70px;
+
+}
+
+.si-cover {
+  height: auto;
+  max-height: 750px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 70px;
+  overflow-clip-margin: content-box;
+  overflow: clip;  
+  box-shadow: 0 0 20px black;
+}
+
+#img-caption {
+  font-family: Courier;
+  font-weight: 700;
+  font-size: 1.75rem;
+  max-width: 568px;
+  text-align: center;
+  margin: 15px auto 5px auto;
+  display: block;
+  color: f3f1e5;
+  text-shadow: 0 0 15px black;
+}
+
+.info-titles {
+  font-size: 4.5rem;
+  text-align: center;
+  font-variant: small-caps;
+  font-family: Bookman;
+}
+
+ul {
+  margin-top: 0;
+}
+
+
+ul li, ul bold, #wiki, #wiki a {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 2rem;
+} 
+
+bold {
+  font-weight: bold;
+}
+
+.divider {
+  border-bottom: 5px solid rgba(0, 0, 0, 75%);
+  margin: 2px 0;
+}
+
+#wiki, #wiki a {
+  text-align: center;
+  margin-top: -25px
+}
+
+** end of undefined **
+

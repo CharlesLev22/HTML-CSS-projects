@@ -1,0 +1,330 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hammers Unlimited</title>
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://i.imgur.com/rFpfrG5.jpg" alt="Hammers Unlimited Logo" width="200px" />
+      <nav id="nav-bar">
+        <ul>
+          <li>
+            <a href="#mission" class="nav-link">Mission</a>
+          </li>
+          
+          <li>
+            <a href="#hammers" class="nav-link">Products</a>
+          </li>
+          <li>
+            <a href="#how-to" class="nav-link">Tutorial</a>
+          </li>
+          <li>
+            <a href="#sign-up" class="nav-link">Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="mission">
+        <h2 id="first-title">Our Mission</h2>
+        <p id="mission-statement">In a world of problems, no tool leaves users better equiped with solutions than the hammer. The hammer pushes, pulls, rips, and smashes. Versatility to this level is not often realized within a tool, and we are proud to say we have accomplished said feat. Hammers Unlimited is dedicated to maintaining our spot as the top innovating company in the hammer space. We pride ourselves in the manufacturing and development of every hammer that sports our company name, a pride that customers have apprieciated for over 50 years.</p>
+      </section>
+      
+      <section id="hammers">
+        <h2>Our Products</h2>
+        <div id="products">
+        <div id="small-hammer" class="types">
+          <h3 class="hammers">Small Hammer</h3>
+          <img id="small-hammer-img" src="https://i.imgur.com/9o8X3QN.jpeg" alt="Small Hammer" width="200px" />
+          <h3 class="good-for">Good for...</h3>
+          <ul class="hammer-pros">
+          <li>
+            Opening nuts
+          </li>
+          <li>
+            Squishing bugs
+          </li>
+          <li>
+            Causing small bruises
+          </li>
+        </ul>
+        <button class="buy">Buy</button>
+        </div>
+        <div id="regular-hammer" class="types">
+          <h3 class="hammers">Regular Hammer</h3>
+          <img id="regular-hammer-img" src="https://i.imgur.com/lVVFdj0.jpeg" alt="Regular-sized Hammer" width="200px" />
+          <h3 class="good-for">Good for...</h3>
+          <ul class="hammer-pros">
+          <li>
+            Installing nails
+          </li>
+          <li>
+            Prying
+          </li>
+          <li>
+            Shaping metal
+          </li>
+        </ul>
+        <button class="buy">Buy</button>
+        </div>
+        <div id="big-hammer" class="types">
+          <h3 class="hammers">Big Hammer</h3>
+          <img id="big-hammer-img" src="https://i.imgur.com/GVVLgTL.jpeg" alt="Big Hammer" width="200px" />
+          <h3 class="good-for">Good for...</h3>
+          <ul class="hammer-pros">
+          <li>
+            Breaking houses
+          </li>
+          <li>
+            Crushing rocks
+          </li>
+          <li>
+            Causing irreversible damage
+          </li>
+        </ul>
+        <button class="buy">Buy</button>
+        </div>
+        </div>
+      </section>
+      <section id="how-to">
+        <h2>Learn the Tool</h2>
+        <div id="embed">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/g6dvj4MKjDc?si=o7MA8LOdvKKjUPHR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      </section>
+      <section id="sign-up">
+        <h2>Newsletter</h2>
+        <p id="news-blurb">Join our monthly newsletter to stay up to date with current developments and hammer news
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input name="email" id="email" type="email" placeholder="Enter email address" required />
+          <input name="submit" id="submit" type="submit" value="Sign Up"/>
+        </form>
+      </section>
+    </main>
+    <footer id="footer">
+      <span>Copyright 2024, Hammers Unlimited</span>
+    </footer>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  /*border: 1px solid grey;*/
+  box-sizing: border-box;
+  font-family: Helvetica, Brush Script MT;
+  color: #0e0e0c;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #cec099;
+  display: flex;
+  position: fixed;
+  height: 200px;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 2rem;
+}
+
+#header-img {
+  width: 50%;
+  max-width: 524px;
+  min-width: 376px;
+  align-items: left;
+}
+
+nav {
+  width: 50%; 
+}
+
+#nav-bar ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav ul li {
+  display: block;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid #0e0e0c;
+  padding: 5px;
+}
+
+nav > ul > li:hover {
+  background-color: #f1efe8;
+  color: #1b1b32;
+  cursor: pointer;
+  font-size: 2.2rem;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  padding-top: 175px;
+  background-color: #f1efe8;
+}
+
+h2{
+  text-align: center;
+  font-family: serif, Brush Script MT;
+  font-size: 4rem;
+  padding-top: 45px;
+}
+
+#first-title {
+  border: none;
+  padding-top: 25px;
+} 
+
+#mission-statement {
+  font-size: 2.25rem;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #cac29c;
+  padding: 25px;
+  max-width: 1000px;
+  border-radius: 5px;
+  margin-bottom: -53px;
+  
+}
+
+#hammers {
+  padding-top: 20px;
+}
+
+.types {
+  border: 1px solid black;
+  padding: 0 0px 10px 0px;
+  border-radius: 5px
+}
+
+#products {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  
+}
+
+#hammers img {
+  margin: -30px auto -135px auto;
+  width: 100%;
+  max-width: 350px;
+  min-width: 350px;  
+  }
+
+.hammers {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0px;
+  background-color: #cac29c;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.good-for{
+  margin-left: 5px;
+  font-size: 1.5rem;
+  margin-bottom: -7px;
+}
+.hammer-pros {
+  margin-left: -10px;
+  font-size: 1.25rem
+}
+
+.buy {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 2px;
+  background-color: #cac29c;
+  cursor: pointer;
+  margin-top: -10px;
+  position: relative;
+  left: 130px;
+}
+
+#how-to {
+  margin-top: -20px;
+}
+
+#embed {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#how-to iframe{
+  aspect-ratio: 16 / 9;
+  height: auto;
+  width: 75vw;
+  
+}
+
+#sign-up {
+  margin-top: -50px;
+}
+
+#news-blurb {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#form {
+  padding: 50px;
+  display: block;
+  text-align: center;
+}
+
+#form #email {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#form #submit {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+}
+
+#footer {
+  height: 50px;
+}
+
+@media only screen and (max-width: 1145px) {
+  #products {
+    flex-direction: column;
+  }
+}
+
+
+** end of undefined **
+
