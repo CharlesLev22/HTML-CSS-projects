@@ -1,0 +1,208 @@
+** start of undefined **
+
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>NFL Fan Loyalty Survey</title>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <h1 id="title">NFL Fan Loyalty Survey</h1>
+      <p id="description" class="description">How loyal are NFL fans?</p>
+      <form id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label" >Name<input id="name" name="name" type="text" required placeholder="Enter your name" class="bar" /></label>
+          <label for="email" id="email-label" >Email<input id="email" name="email" type="email" required placeholder="Enter your email" class="bar" /></label>
+          <label for="age" id="number-label" >Age<input id="number" name="age" type="number" min="13" max="120" required placeholder="Age" class="bar" /></label>
+        </fieldset>
+        <fieldset>
+          <label>Who is your favorite team?</label>
+          <select id="dropdown" required class="bar">
+            <option disabled selected value>(Select One)</option>
+            <option value="49ers" >49ers</option>
+            <option value="bears" >Bears</option>
+            <option value="bengals" >Bengals</option>
+            <option value="bills" >Bills</option>
+            <option value="broncos" >Broncos</option>
+            <option value="browns" >Browns</option>
+            <option value="buccaneers" >Buccaneers</option>
+            <option value="cardinals" > Cardinals</option>
+            <option value="chargers" >Chargers</option>
+            <option value="chiefs" >Chiefs</option>
+            <option value="colts" >Colts</option>
+            <option value="commanders" >Commanders</option>
+            <option value="cowboys" >Cowboys</option>
+            <option value="dolphins" >Dolphins</option>
+            <option value="eagles" >Eagles</option>
+            <option value="falcons" >Falcons</option>
+            <option value="giants" >Giants</option>
+            <option value="jaguars" >Jaguars</option>
+            <option value="jets" >Jets</option>
+            <option value="lions" >Lions</option>
+            <option value="packers" >Packers</option>
+            <option value="panthers" >Panthers</option>
+            <option value="patriots" >Patriots</option>
+            <option value="raiders" >Raiders</option>
+            <option value="rams" >Rams</option>
+            <option value="ravens" >Ravens</option>
+            <option value="saints" >Saints</option>
+            <option value="seahawks" >Seahawks</option>
+            <option value="steelers" >Steelers</option>
+            <option value="texans" >Texans</option>
+            <option value="titans" >Titans</option>
+            <option value="vikings" >Vikings</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label class="fan-years">How many years have you been a fan?<input id="fan-years" type="number" min="0" max="120" placeholder="Years" required class="bar" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <label>What is your dedication level?</label>
+          <label><input id="never-miss" type="radio" name="dedication" class="check" value="never-miss" />Never miss a game</label>
+          <label><input id="follow" type="radio" name="dedication" class="check" value="follow" />Follow how the team is doing</label>
+          <label><input id="if-its-on" type="radio" name="dedication" class="check" checked value="if-its-on" />Only care if it is on</label>
+          <label><input id="dont-care" type="radio" name="dedication" class="check" value="dont-care" />Don't care</label>
+        </fieldset>
+        <fieldset>
+          <label>What is your most joyous memory of the team?</label>
+          <textarea id="joyous" rows="3" col="30" placeholder="Enter your comment here..."></textarea>
+          <label>What is your most frustrating memory of the team?</label>
+          <textarea id="frustrating" rows="3" col="30" placeholder="Enter your comment here..."></textarea>
+        </fieldset>
+        <fieldset>
+          <label>How did you become a fan? </label>
+          <label class="description apply" >(select all that apply)</label>
+            <label><input id="family" type="checkbox" value="family" class="check" />Family</label>
+            <label><input id="friends" type="checkbox" value="friends" class="check" />Friends</label>
+           <label><input id="Madden" type="checkbox" value="madden" class="check" />Madden</label>
+           <label><input id="favorite-player" type="checkbox" value="player" class="check" />Favorite player</label>
+           <label><input id="winners" type="checkbox" value="win" class="check" />Win a lot</label>
+           <label><input id="random" type="checkbox" value="random" class="check" />Random Chance</label>
+           <label><input id="other" type="checkbox" value="other" class="check" />Other</label>
+           <label class="story" class="check" >Care to share the story?</label>
+           <textarea id="fan-story" placeholder="Enter the story here..."></textarea>
+          </fieldtest>
+        <input id="submit" type="submit" value="submit" class="submit" />
+      </form>
+    </body>
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+html { 
+  height: 100vh;
+}
+
+body {
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 1.15rem;
+  font-family: georgia;
+  background-image: linear-gradient(180deg, rgba(130, 87, 54, 0.7), rgba(130, 87, 54, 0.6)), url(https://i.imgur.com/3QCmg01.png);
+  line-height: 1.4;
+  background-position: center;
+}
+
+h1, p {
+  text-align: center;
+  margin: 2rem auto;
+  display: block;
+}
+
+p {
+  font-size: 1.5rem;
+  padding: 0 0 10px 0;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  border-radius: 0.15rem;
+  background-color: rgba(130, 87, 54, 0.8) ; 
+  
+}
+
+fieldset:first-of-type {
+  padding-top: 1.5rem
+}
+
+fieldset {
+  border: none;
+  padding: 1rem 0 1.5rem 0;
+  border-bottom: 3px solid
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.description {
+  font-style: italic;
+}
+
+.bar, textarea {
+  margin: 10px 0 0 0;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  min-height: 2em;
+  font-family: georgia;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 75px;
+}
+
+.apply {
+  padding-bottom: 1rem
+}
+ 
+ select {
+   margin: 10px 0 0 0;
+ }
+
+ .story {
+   padding-top: 1rem;
+ }
+
+ .submit {
+   display: block;
+   width: 80%;
+   margin: auto;
+   padding: 0.75rem;
+   margin-top: 2rem;
+   background-color: rgba(130, 87, 54, 1);
+   color: white;
+   border-color: white;
+   cursor: pointer;
+   font-size: 1.1rem;
+ }
+ 
+.check {
+  cursor: pointer;
+  display: inline-block;
+    margin-right: 0.625rem;
+    min-width: 1.25rem;
+}
+
+** end of undefined **
+
