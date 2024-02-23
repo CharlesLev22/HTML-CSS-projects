@@ -1,0 +1,344 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+  </head>
+  <body>
+    <header id="header">
+      <nav id="navbar">
+        <ul id="navlist">
+          <li>
+            <a href="#welcome-section">About Me</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+<!--welcome section-->
+      <section id="welcome-section">
+        <p id="name-other">Hello, I'm</p>
+        <h1 id="name">Charles Levandoski</h1>
+        <p id="name-other">a web developer</p>
+          <div id="chevron"></div>
+      </section>  
+<!--project section-->
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div id="project-list">
+          <a href="https://codepen.io/CharlesLev/pen/gOEJEZW" target="_blank" class="project-tile">
+            <img class="project-img" src="https://i.imgur.com/3zdSZFA.png" alt="Survey Form">
+            <p>Survey Form</p>
+          </a>
+          <a href="https://codepen.io/CharlesLev/pen/WNmBmBJ" target="_blank" class="project-tile">
+            <img class="project-img" src="https://i.imgur.com/Ui7nfex.png" alt="Johnny Unitas Tribute Page">
+            <p>Tribute Page</p>
+          </a>
+          <a href="https://codepen.io/CharlesLev/pen/mdoYgbm" target="_blank" class="project-tile">
+            <img class="project-img" src="https://i.imgur.com/d84a0KK.png" alt="HTML and CSS tips and tricks">
+            <p>HTML/CSS Tips</p>
+          </a>
+          <a href="https://codepen.io/CharlesLev/pen/oNVROXL" target="_blank" class="project-tile">
+            <img class="project-img" src="https://i.imgur.com/RKm2GYe.png" alt="Product Landing Page">
+            <p>Product Page</p>
+          </a>
+        </div>
+        <button id="profile-button"> <a id="profile-link" href="https://codepen.io/CharlesLev" target="_blank">
+          Full Profile...</a>
+        </button>
+      </section>
+<!--contact section-->
+      <section id="contact">
+        <div>
+          <h2>My Information</h2>
+          <p>Eager to start working</p>
+        </div>
+        <div id="contact-link">
+          <a href="https://codepen.io/CharlesLev" target="_blank">CodePen</a>
+          <a href="https://www.freecodecamp.org/CharlesLev" target="_blank">freeCodeCamp</a>
+          <a href="https://github.com/CharlesLev22" target="_blank">GitHub</a>        
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <p>
+        © Created for
+        <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp <i class="fab fa-free-code-camp"></i></a>
+      </p>
+    </footer>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+:root {
+  --color1: #5E5471;
+  --color2: #aeb69d;
+  --color3: #AC9087;
+}
+
+* {
+  margin: 0; 
+  padding: 0;
+  overflow-x: hidden;
+  /* border: 1px solid black; */
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.8rem;
+  color: white;
+  line-height: 1.4;
+}
+
+/*header*/
+#navbar {
+  background-color: var(--color1);
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 0 black;
+  z-index: 10;
+}
+
+#navlist {
+  display: flex;
+  margin: 0 2rem 0 0;
+}
+
+#navlist a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#navbar a:hover {
+  color: black;
+  background-color: var(--color2)
+}
+
+/*section 1*/
+#welcome-section {
+  background-color: var(--color2); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-size: 4rem;
+}
+      /*name*/
+#name {
+  font-size: 9rem;
+  font-family: serif;
+  animation: animation(5s linear infinite fadeIn);
+}
+@media (max-width: 785px) {
+  #name {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 615px) {
+    #navbar {
+    justify-content: center;
+  }
+  #name {
+    font-size: 5rem;
+  }
+  #name-other {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 444px) {
+
+  #name {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+      /*down*/
+#chevron {
+  margin: auto;
+  position: absolute;
+  height: 60px;
+  width: 200px;
+  bottom: 0;
+  animation: 2s linear infinite bounce;
+}
+#chevron:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25%;
+  width: 50%;
+  background: var(--color1);
+  transform: skew(0deg, 20deg);
+}
+#chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25%;
+  width: 50%;
+  background: var(--color1);
+  transform: skew(0deg, -20deg);
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*projects*/
+#projects {
+  background-color: var(--color3);
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#projects h2 {
+  font-size: 6rem;
+  padding: 5rem;
+  text-shadow: 0 0 5px black;
+}
+
+#project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project-tile {
+  background-color: var(--color1);
+  overflow: hidden;
+  border-radius: 5px;
+  padding: 2rem;
+}
+.project-tile:hover {
+  background-color: var(--color2);
+  color: black;
+}
+
+.project-tile p {
+  font-size: 3rem;
+  padding: 2rem;  
+}
+
+.project-img {
+  width: 100%;
+  height: calc(100% - 68px);
+  object-fit: cover;
+  padding: 0;
+}
+
+#profile-button {
+  background-color: var(--color1);
+  font-size: 2rem;
+  margin: 3rem;
+  padding: 2rem;
+}
+
+#profile-link:hover {
+  cursor: pointer;
+  color: black;
+  background-color: var(--color2);
+}
+
+#profile-button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: var(--color2);
+}
+
+#contact {
+  min-height: 100vh;
+  padding: 3rem;
+  background-color: var(--color1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-size: 4rem;
+}
+
+#contact h2 {
+  font-size: 8rem;
+  font-family: serif;
+}
+
+#contact p {
+  font-size: 3rem;
+}
+
+#contact-link {
+  padding: 5rem;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+#contact-link a {
+  padding: 4rem;
+  border-radius: 15%;
+}
+
+#contact-link a:hover {
+  background-color: var(--color2);
+  color: black;
+}
+
+footer {
+  background-color: var(--color1);
+}
+
+
+
+** end of undefined **
+
